@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="fun.js"></script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div ng-app="myApp" ng-controller="personalCtrl">
+	First Name: <input type="text" ng-model="firstName" /><br />
+	Last Name: <input type="text" ng-model="lastName" /><br />
+	Full Name:{{fullName()}}
+</div>
+</body>
+</html>
