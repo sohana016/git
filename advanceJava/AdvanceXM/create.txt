@@ -1,0 +1,29 @@
+ String accountNo = inp_acc_no.getText();
+        String micr_no = inp_micr_vo.getText();
+        int pin = Integer.parseInt(inp_pin.getText());
+        String acc_typ = select_acc_typ.getItemAt(select_acc_typ.getSelectedIndex());
+        String gender = select_gender.getItemAt(select_gender.getSelectedIndex());
+        
+        String address = inp_add.getText();
+        Double amount = Double.parseDouble(inp_amount.getText());
+        String name = inp_name.getText();
+        String dateOfBirth = inp_Bdate.getText();
+        String nationality = select_natnlty.getItemAt(select_natnlty.getSelectedIndex());
+        String caste = inp_caste.getText();
+        int mobile = Integer.parseInt(inp_mobl.getText());
+        String seqQsn = inp_seq_q.getText();
+        String ans= inp_ans.getText();
+        
+        try {
+            Account account = new Account(accountNo, micr_no, pin, acc_typ, gender, address, amount, name, dateOfBirth, nationality, caste, mobile, seqQsn, ans);
+            
+            AccountImp accImp = new AccountImp();
+            accImp.save(account);
+            
+            Summary summary = new Summary(name, accountNo, amount);
+            SummaryImp sumImp = new SummaryImp();
+            sumImp.save(summary);
+            
+        } catch (Exception e) {
+            System.out.println(e);
+        }

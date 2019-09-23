@@ -1,0 +1,15 @@
+mysql command  line connection
+= cd \xampp\mysql\bin
+= mysql.exe -u root
+= show databses;
+=  create database sohana;
+= use sohana;
+= create  table product(id int primary key auto_increment, name varchar(20),quantity int price float);
+= show tables;
+= insert into product(name,quantity,price) values('Orange',100,6.00);
+= commit;
+= select * from product;
+Database connection
+with try catch
+=Class.forName("com.mysql.jdbc.Driver");
+=Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sohana","root","");

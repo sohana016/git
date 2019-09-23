@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+	<book category = "cooking">
+		<title lang = "en">Everyday Italiant</title>
+		<author>Giada de laurentis</author>
+		<year>2005</year>
+		<price>30.00</price>
+		
+	</book>
+	
+	<book category = "children">
+		<title lang = "en">Harry potter</title>
+		<author>J K.Rowling</author>
+		<year>2005</year>
+		<price>34.00</price>
+	</book>
+
+</bookstore>
